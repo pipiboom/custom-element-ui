@@ -39,6 +39,7 @@ import FormItem from '../packages/form-item/index.js';
 import Tabs from '../packages/tabs/index.js';
 import TabPane from '../packages/tab-pane/index.js';
 import Tag from '../packages/tag/index.js';
+import Testcom from '../packages/testcom/index.js';
 import Tree from '../packages/tree/index.js';
 import Alert from '../packages/alert/index.js';
 import Notification from '../packages/notification/index.js';
@@ -130,6 +131,7 @@ const components = [
   Tabs,
   TabPane,
   Tag,
+  Testcom,
   Tree,
   Alert,
   Slider,
@@ -255,6 +257,7 @@ export default {
   Tabs,
   TabPane,
   Tag,
+  Testcom,
   Tree,
   Alert,
   Notification,
