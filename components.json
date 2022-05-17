@@ -38,7 +38,6 @@
   "tabs": "./packages/tabs/index.js",
   "tab-pane": "./packages/tab-pane/index.js",
   "tag": "./packages/tag/index.js",
-  "testcom": "./packages/testcom/index.js",
   "tree": "./packages/tree/index.js",
   "alert": "./packages/alert/index.js",
   "notification": "./packages/notification/index.js",
