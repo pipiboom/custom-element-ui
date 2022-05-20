@@ -78,11 +78,12 @@
   &.is-active {
     color: $--cascader-menu-selected-font-color;
     font-weight: bold;
+    background: $--background-color-cascader;
   }
 
   &:not(.is-disabled) {
     cursor: pointer;
-    &:hover, &:focus {
+    &:hover {
       background: $--cascader-node-background-hover;
     }
   }

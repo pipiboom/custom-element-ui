@@ -5,20 +5,20 @@
   min-width: $--message-min-width;
   box-sizing: border-box;
   border-radius: $--border-radius-base;
-  border-width: $--border-width-base;
-  border-style: $--border-style-base;
-  border-color: $--border-color-lighter;
+  // border-width: $--border-width-base;
+  // border-style: $--border-style-base;
+  // border-color: $--border-color-lighter;
   position: fixed;
+  box-shadow: 0px 9px 28px 8px rgba(0, 0, 0, 0.05), 0px 6px 16px 0px rgba(0, 0, 0, 0.08), 0px 3px 6px -4px rgba(0, 0, 0, 0.12);
   left: 50%;
   top: 20px;
   transform: translateX(-50%);
-  background-color: $--message-background-color;
+  background-color: $--color-white;
   transition: opacity 0.3s, transform .4s, top 0.4s;
   overflow: hidden;
   padding: $--message-padding;
   display: flex;
   align-items: center;
-
   @include when(center) {
     justify-content: center;
   }
@@ -32,39 +32,41 @@
   p {
     margin: 0;
   }
-
-  @include m(info) {
-    .el-message__content {
-      color: $--message-info-font-color;
-    }
+  .el-message__content {
+    color: rgba(0, 0, 0, 0.65);
   }
+  // @include m(info) {
+  //   .el-message__content {
+  //     color: $--message-info-font-color;
+  //   }
+  // }
 
-  @include m(success) {
-    background-color: $--color-success-lighter;
-    border-color: $--color-success-light;
+  // @include m(success) {
+  //   background-color: $--color-success-lighter;
+  //   border-color: $--color-success-light;
 
-    .el-message__content {
-      color: $--message-success-font-color;
-    }
-  }
+  //   .el-message__content {
+  //     color: $--message-success-font-color;
+  //   }
+  // }
 
-  @include m(warning) {
-    background-color: $--color-warning-lighter;
-    border-color: $--color-warning-light;
+  // @include m(warning) {
+  //   background-color: $--color-warning-lighter;
+  //   border-color: $--color-warning-light;
 
-    .el-message__content {
-      color: $--message-warning-font-color;
-    }
-  }
+  //   .el-message__content {
+  //     color: $--message-warning-font-color;
+  //   }
+  // }
 
-  @include m(error) {
-    background-color: $--color-danger-lighter;
-    border-color: $--color-danger-light;
+  // @include m(error) {
+  //   background-color: $--color-danger-lighter;
+  //   border-color: $--color-danger-light;
 
-    .el-message__content {
-      color: $--message-danger-font-color;
-    }
-  }
+  //   .el-message__content {
+  //     color: $--message-danger-font-color;
+  //   }
+  // }
 
   @include e(icon) {
     margin-right: 10px;

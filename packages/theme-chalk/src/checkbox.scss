@@ -120,9 +120,9 @@
 
       &.is-checked {
         .el-checkbox__inner {
-          background-color: $--checkbox-disabled-checked-input-fill;
-          border-color: $--checkbox-disabled-checked-input-border-color;
-
+          background-color: $--checkbox-checked-background-color;
+          border-color: $--checkbox-checked-input-border-color;
+          opacity: 0.5;
           &::after {
             border-color: $--checkbox-disabled-checked-icon-color;
           }
@@ -151,7 +151,7 @@
       .el-checkbox__inner {
         background-color: $--checkbox-checked-background-color;
         border-color: $--checkbox-checked-input-border-color;
-
+        
         &::after {
           transform: rotate(45deg) scaleY(1);
         }

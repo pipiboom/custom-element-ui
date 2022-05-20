@@ -99,7 +99,7 @@
       margin: 2px 0 2px 6px;
       text-overflow: ellipsis;
       background: $--cascader-tag-background;
-
+      color: $--color-gray;
       &:not(.is-hit) {
         border-color: transparent;
       }

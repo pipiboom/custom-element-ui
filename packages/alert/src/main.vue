@@ -23,7 +23,7 @@
   const TYPE_CLASSES_MAP = {
     'success': 'el-icon-success',
     'warning': 'el-icon-warning',
-    'error': 'el-icon-error'
+    'error': 'el-icon-warning'
   };
   export default {
     name: 'ElAlert',

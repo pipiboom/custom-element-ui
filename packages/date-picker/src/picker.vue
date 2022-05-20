@@ -19,10 +19,11 @@
     @mouseleave.native="showClose = false"
     :validateEvent="false"
     ref="reference">
-    <i slot="prefix"
+    <i slot="suffix"
       class="el-input__icon"
       :class="triggerClass"
-      @click="handleFocus">
+      @click="handleFocus"
+      v-show="!showClose">
     </i>
     <i slot="suffix"
       class="el-input__icon"
@@ -46,7 +47,6 @@
     ref="reference"
     v-clickoutside="handleClose"
     v-else>
-    <i :class="['el-input__icon', 'el-range__icon', triggerClass]"></i>
     <input
       autocomplete="off"
       :placeholder="startPlaceholder"
@@ -59,6 +59,7 @@
       @change="handleStartChange"
       @focus="handleFocus"
       class="el-range-input">
+      
     <slot name="range-separator">
       <span class="el-range-separator">{{ rangeSeparator }}</span>
     </slot>
@@ -77,7 +78,7 @@
     <i
       @click="handleClickIcon"
       v-if="haveTrigger"
-      :class="[showClose ? '' + clearIcon : '']"
+      :class="[showClose ? '' + clearIcon : triggerClass]"
       class="el-input__icon el-range__close-icon">
     </i>
   </div>

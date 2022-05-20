@@ -110,11 +110,11 @@
       }
       &.is-checked {
         .el-radio__inner {
-          background-color: $--radio-disabled-checked-input-fill;
-          border-color: $--radio-disabled-checked-input-border-color;
-
+          border-color: $--radio-checked-input-border-color;
+          background: $--radio-checked-icon-color;
+          opacity: 0.5;
           &::after {
-            background-color: $--radio-disabled-checked-icon-color;
+            background-color: $--border-color-base;
           }
         }
       }
@@ -161,8 +161,8 @@
     }
 
     &::after {
-      width: 4px;
-      height: 4px;
+      width: 10px;
+      height: 10px;
       border-radius: $--radio-input-border-radius;
       background-color: $--color-white;
       content: "";

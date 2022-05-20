@@ -29,6 +29,12 @@ $--color-warning: #F68C00 !default;
 $--color-danger: #F3222D !default;
 /// color|1|Functional Color|1
 $--color-info: #909399 !default;
+// color|1|Functional Color|1
+$--color-blue: #E8EFFE !default;
+
+$--color-gray: #333333 !default;
+
+$--color-dgray: #666666 !default;
 
 $--color-primary-light-1: mix($--color-white, $--color-primary, 10%) !default; /* 53a8ff */
 $--color-primary-light-2: mix($--color-white, $--color-primary, 20%) !default; /* 66b1ff */
@@ -51,15 +57,18 @@ $--color-warning-lighter: mix($--color-white, $--color-warning, 90%) !default;
 $--color-danger-lighter: mix($--color-white, $--color-danger, 90%) !default;
 $--color-info-lighter: mix($--color-white, $--color-info, 90%) !default;
 /// color|1|Font Color|2
-$--color-text-primary: #303133 !default;
+$--color-text-primary: #333 !default;
 /// color|1|Font Color|2
-$--color-text-regular: #606266 !default;
+// $--color-text-regular: #606266 !default;
+$--color-text-regular: #666 !default;
 /// color|1|Font Color|2
 $--color-text-secondary: #909399 !default;
 /// color|1|Font Color|2
-$--color-text-placeholder: #C0C4CC !default;
+// $--color-text-placeholder: #C0C4CC !default;
+$--color-text-placeholder: #D9DBE0 !default;
+
 /// color|1|Border Color|3
-$--border-color-base: #DCDFE6 !default;
+$--border-color-base: #C4C7CC !default;
 /// color|1|Border Color|3
 $--border-color-light: #E4E7ED !default;
 /// color|1|Border Color|3
@@ -70,6 +79,9 @@ $--border-color-extra-light: #F2F6FC !default;
 // Background
 /// color|1|Background Color|4
 $--background-color-base: #F5F7FA !default;
+
+// cascader
+$--background-color-cascader: #F1F3F6 !default;
 
 /* Link
 -------------------------- */
@@ -222,8 +234,8 @@ $--radio-font-size: $--font-size-base !default;
 $--radio-font-weight: $--font-weight-primary !default;
 /// color||Color|0
 $--radio-font-color: $--color-text-regular !default;
-$--radio-input-height: 14px !default;
-$--radio-input-width: 14px !default;
+$--radio-input-height: 16px !default;
+$--radio-input-width: 16px !default;
 /// borderRadius||Border|2
 $--radio-input-border-radius: $--border-radius-circle !default;
 /// color||Color|0
@@ -293,15 +305,15 @@ $--select-input-focus-border-color: $--color-primary !default;
 /// fontSize||Font|1
 $--select-input-font-size: 14px !default;
 
-$--select-option-color: $--color-text-regular !default;
+$--select-option-color: $--color-text-primary !default;
 $--select-option-disabled-color: $--color-text-placeholder !default;
 $--select-option-disabled-background: $--color-white !default;
 /// height||Other|4
 $--select-option-height: 34px !default;
-$--select-option-hover-background: $--background-color-base !default;
+$--select-option-hover-background: $--color-blue !default;
 /// color||Color|0
 $--select-option-selected-font-color: $--color-primary !default;
-$--select-option-selected-hover: $--background-color-base !default;
+$--select-option-selected-hover: $--color-blue !default;
 
 $--select-group-color: $--color-info !default;
 $--select-group-height: 30px !default;
@@ -369,7 +381,7 @@ $--messagebox-danger-color: $--color-danger !default;
 $--message-shadow: $--box-shadow-base !default;
 $--message-min-width: 380px !default;
 $--message-background-color: #edf2fc !default;
-$--message-padding: 15px 15px 15px 20px !default;
+$--message-padding: 12px 16px 12px 16px !default;
 /// color||Color|0
 $--message-close-icon-color: $--color-text-placeholder !default;
 /// height||Other|4
@@ -475,13 +487,13 @@ $--input-mini-height: 28px !default;
 /// color||Color|0
 $--cascader-menu-font-color: $--color-text-regular !default;
 /// color||Color|0
-$--cascader-menu-selected-font-color: $--color-primary !default;
+$--cascader-menu-selected-font-color: $--color-black !default;
 $--cascader-menu-fill: $--fill-base !default;
 $--cascader-menu-font-size: $--font-size-base !default;
 $--cascader-menu-radius: $--border-radius-base !default;
 $--cascader-menu-border: solid 1px $--border-color-light !default;
 $--cascader-menu-shadow: $--box-shadow-light !default;
-$--cascader-node-background-hover: $--background-color-base !default;
+$--cascader-node-background-hover: $--color-blue !default;
 $--cascader-node-color-disabled:$--color-text-placeholder !default;
 $--cascader-color-empty:$--color-text-placeholder !default;
 $--cascader-tag-background: #f0f2f5;

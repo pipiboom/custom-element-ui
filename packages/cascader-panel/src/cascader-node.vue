@@ -100,7 +100,7 @@
         } else if (checkStrictly) {
           return this.renderRadio(h);
         } else if (isLeaf && isChecked) {
-          return this.renderCheckIcon(h);
+          // return this.renderCheckIcon(h);
         }
 
         return null;
